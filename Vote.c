@@ -45,6 +45,7 @@ int main()
 					system("pause");
 					return 0;
 				}
+				continue;
 			default:
 				valid = 0;
 				system("cls");
