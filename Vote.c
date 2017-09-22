@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int suara[3]={0,0,0};
-int pilihan,verif,valid;
+int suara[3]={0,0,0}; //Inisialisasi Variable
+int pilihan,verif,valid; // Sama
 
 void rekap(int hasil[3]);
 
@@ -35,10 +35,10 @@ int main()
 			case 1708:
 				rekap(suara);
 				continue;
-			case 106:
+			case 106: //Untuk Shutdown system
 				system("cls");
 				scanf("%d",&verif);
-				if(verif==2810)
+				if(verif==2810) // Req Pass
 				{
 					system("cls");
 					printf("System Shutdown\n\n");
@@ -46,7 +46,7 @@ int main()
 					return 0;
 				}
 				continue;
-			default:
+			default: //Error Handler
 				valid = 0;
 				system("cls");
 				printf("-------------------------------------------------------------------------------\n");
@@ -69,7 +69,8 @@ int main()
 
 void rekap(int hasil[3])
 {
-	int modus;
+	int a=hasil[0],b=hasil[1],c=hasil[2];
+	int kuy[3]={0,0,0}
 	system("cls");
 	printf("-------------------------------------------------------------------------------\n");
 	printf("                                  System Pemilu\n");
@@ -78,5 +79,18 @@ void rekap(int hasil[3])
 	printf("Juan Carloz \t: %d suara\n",hasil[0]);
 	printf("Albert HM \t: %d suara\n",hasil[1]);
 	printf("Rudy Anantara \t: %d suara\n\n",hasil[2]);
+	if(a>=b && a>=c)
+	{
+		kuy[0]=1;
+	}
+	else if(b>=a && b>=c)
+	{
+		kuy[1]=1;
+	}
+	else
+	{
+		kuy[2]=1;
+	}
+	
 	system("pause");
 }
