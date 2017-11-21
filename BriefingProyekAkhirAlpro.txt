@@ -1,0 +1,12 @@
+Linked List
+Struktur data terdiri dari :
+Sisi Penumpang :
+  Kartu KTP
+  Jurusan
+Sisi Bus :
+  Nama Maskapai
+  Jurusan
+  Kapasitas
+
+Fitur :
+Pendaftaran Penumpang (Append, Insert(untuk penumpang 1 keluarga))
